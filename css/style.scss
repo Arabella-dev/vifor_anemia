@@ -1,0 +1,308 @@
+$red: #FC1921;
+$black: #000000;
+$grey-800: #444446;
+$grey-600: #8F8F90;
+$grey-400: #DADADA;
+$white: #FFFFFF;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700;900&display=swap');
+ 
+
+//TIPO
+
+@mixin font($ff: Montserrat, $fw: normal, $cl: $black, $fs: 56, $lh: 64){
+    font-family: $ff, sans-serif;
+    font-weight: $fw;
+    color: $cl;
+    font-size: $fs+px;
+    line-height: $lh+px;
+}
+
+%h1{
+    @include font($ff: Montserrat, $fw: 700, $cl: $red, $fs: 56, $lh: 64);
+}
+%h2{
+    @include font($ff: Montserrat, $fw: bold, $cl: $red, $fs: 48, $lh: 56);
+}
+%h3{
+    @include font($ff: Montserrat, $fw: bold, $cl: $black, $fs: 40, $lh: 48);
+}
+%h4{
+    @include font($ff: Montserrat, $fw: bold, $cl: $black, $fs: 32, $lh: 40);
+}
+%h5{
+    @include font($ff: Montserrat, $fw: bold, $cl: $black, $fs: 24, $lh: 32);
+}
+%subtitle{
+    @include font($ff: Montserrat, $fw: normal, $cl: $grey-600, $fs: 20, $lh: 24);
+}
+%body{
+    @include font($ff: Montserrat, $fw: normal, $cl: $black, $fs: 16, $lh: 20);
+}
+%button{
+    @include font($ff: Montserrat, $fw: medium, $cl: $black, $fs: 16, $lh: 20);
+}
+%caption{
+    @include font($ff: Montserrat, $fw: light, $cl: $grey-800, $fs: 14, $lh: 18);
+}
+
+h1, .h1{
+    @extend %h1;
+}
+h2, .h2{
+    @extend %h2;
+}
+h3, .h3{
+    @extend %h3;
+}
+h4, .h4{
+    @extend %h4;
+}
+h5, .h5{
+    @extend %h5;
+}
+.subtitle{
+    @extend %subtitle;
+}
+.body{
+    @extend %body;
+}
+.button{
+    @extend %button;
+}
+.caption{
+    @extend %caption;
+}
+.btn, input[type="submit"]{
+    padding: 8px 24px;
+    color: $black;
+    border-radius: 8px;
+    background-color: $red;
+    border: 0;
+    height: auto;
+    @extend %button;
+
+    &:hover{
+        background-color: $red;
+    }
+    &:active{
+        background-color: $red
+    }
+}
+
+html,body{
+    margin: 0;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 22px;
+    overflow-x: hidden;
+}
+p, li{
+    font-size: 14px;
+    line-height: 18px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.no-padding{
+    padding: 0 !important;
+}
+
+h1.title{
+    color: $red;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 160% */
+}
+h5{
+    padding-right: 80px;
+}
+
+header {
+    background: $grey-800;
+    height: 64px;
+    margin-bottom: 80px;
+
+    .navbar, a.navbar-brand {
+        padding: 0;
+    }
+}
+
+.vertical-center{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+footer{
+    background-color: $grey-600;
+    color: $white;
+    font-family: Montserrat, Arial, sans-serif;
+
+    a{
+        color: $white;
+        text-decoration: underline;
+    }
+
+    header{
+        height: 40px;
+        margin-top: 80px;
+    }
+}
+.navbar-expand-lg{
+    margin: 0 auto;
+
+    .nav-item{
+        position: relative;
+    
+        &:after {
+            content: '|';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &:last-child:after{
+            content: none;
+        }
+    }
+}
+
+.vejatambem{
+    color: $red;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 160% */
+    margin-bottom: 10px;
+}
+
+#links{
+    padding-left: 30px;
+    li{
+        list-style: none;
+
+        a{
+            color: $grey-600;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px; /* 200% */
+            text-decoration-line: underline;
+            position: relative;
+
+            &:before{
+                content: url('../images/ico-play.png');
+                height: 20px;
+                position: absolute;
+                top: 50%;
+                left: -30px;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}
+
+.video {
+    width: 100%;
+    text-align: center;
+    video {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 600px;
+    }
+}
+.a2a_kit {
+    display: flex;
+    float: right;
+
+    p {
+        margin: 5px 0 0;
+    }
+    a{
+        margin-left: 24px;
+        &.a2a_linkshare:after {
+            content: url(../images/ico-share.png);
+        }
+        &.a2a_button_whatsapp:after {
+            content: url(../images/ico-whats.png);
+        }
+        &.a2a_button_facebook:after {
+            content: url(../images/ico-face.png);
+        }
+        &.a2a_button_x:after {
+            content: url(../images/ico-x.png);
+        }
+        &.a2a_button_telegram:after {
+            content: url(../images/ico-telegram.png);
+        }
+        &.a2a_button_linkedin:after {
+            content: url(../images/ico-linkedin.png);
+        }
+        *{
+            display: none;
+        }
+    }
+}
+
+@media(max-width:780px){
+    *{
+        text-align: center;
+    }
+    header{
+        height: 40px;
+    }
+    h3, h2{
+        font-size: 30px;
+        text-align: center;
+    }
+    h1, h2, h3, h4{
+        font-size: 25px;
+    }
+    h1.title{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 20px; 
+        margin-top: 40px;
+    }
+    h5{
+        padding-right: 0;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+    }
+    .subtitle{        
+        font-size: 16px;
+    }
+    .vertical-center{
+        position: relative;
+    }
+    .a2a_kit{
+        p{
+            width: 100%;
+        }
+        a{
+            margin-left: 0;
+            width: 16%;            
+        }
+    }
+    .navbar-expand-lg{
+        .nav-item{
+        
+            &:after {
+                content: none;
+            }
+        }
+}
+}
+@media (min-width:1400px){
+}
+@media (min-width:2000px){
+}

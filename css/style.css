@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700;900&display=swap");
+h1, .h1 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  color: #FC1921;
+  font-size: 56px;
+  line-height: 64px;
+}
+
+h2, .h2 {
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  color: #FC1921;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+h3, .h3 {
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  color: #000000;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+h4, .h4 {
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  color: #000000;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+h5, .h5 {
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  color: #000000;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.subtitle {
+  font-family: Montserrat, sans-serif;
+  font-weight: normal;
+  color: #8F8F90;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.body {
+  font-family: Montserrat, sans-serif;
+  font-weight: normal;
+  color: #000000;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.btn, input[type=submit], .button {
+  font-family: Montserrat, sans-serif;
+  font-weight: medium;
+  color: #000000;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.caption {
+  font-family: Montserrat, sans-serif;
+  font-weight: light;
+  color: #444446;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.btn, input[type=submit] {
+  padding: 8px 24px;
+  color: #000000;
+  border-radius: 8px;
+  background-color: #FC1921;
+  border: 0;
+  height: auto;
+}
+.btn:hover, input[type=submit]:hover {
+  background-color: #FC1921;
+}
+.btn:active, input[type=submit]:active {
+  background-color: #FC1921;
+}
+
+html, body {
+  margin: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 22px;
+  overflow-x: hidden;
+}
+
+p, li {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+h1.title {
+  color: #FC1921;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  /* 160% */
+}
+
+h5 {
+  padding-right: 80px;
+}
+
+header {
+  background: #444446;
+  height: 64px;
+  margin-bottom: 80px;
+}
+header .navbar, header a.navbar-brand {
+  padding: 0;
+}
+
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+footer {
+  background-color: #8F8F90;
+  color: #FFFFFF;
+  font-family: Montserrat, Arial, sans-serif;
+}
+footer a {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+footer header {
+  height: 40px;
+  margin-top: 80px;
+}
+
+.navbar-expand-lg {
+  margin: 0 auto;
+}
+.navbar-expand-lg .nav-item {
+  position: relative;
+}
+.navbar-expand-lg .nav-item:after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.navbar-expand-lg .nav-item:last-child:after {
+  content: none;
+}
+
+.vejatambem {
+  color: #FC1921;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  /* 160% */
+  margin-bottom: 10px;
+}
+
+#links {
+  padding-left: 30px;
+}
+#links li {
+  list-style: none;
+}
+#links li a {
+  color: #8F8F90;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  /* 200% */
+  text-decoration-line: underline;
+  position: relative;
+}
+#links li a:before {
+  content: url("../images/ico-play.png");
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  transform: translateY(-50%);
+}
+
+.video {
+  width: 100%;
+  text-align: center;
+}
+.video video {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 600px;
+}
+
+.a2a_kit {
+  display: flex;
+  float: right;
+}
+.a2a_kit p {
+  margin: 5px 0 0;
+}
+.a2a_kit a {
+  margin-left: 24px;
+}
+.a2a_kit a.a2a_linkshare:after {
+  content: url(../images/ico-share.png);
+}
+.a2a_kit a.a2a_button_whatsapp:after {
+  content: url(../images/ico-whats.png);
+}
+.a2a_kit a.a2a_button_facebook:after {
+  content: url(../images/ico-face.png);
+}
+.a2a_kit a.a2a_button_x:after {
+  content: url(../images/ico-x.png);
+}
+.a2a_kit a.a2a_button_telegram:after {
+  content: url(../images/ico-telegram.png);
+}
+.a2a_kit a.a2a_button_linkedin:after {
+  content: url(../images/ico-linkedin.png);
+}
+.a2a_kit a * {
+  display: none;
+}
+
+@media (max-width: 780px) {
+  * {
+    text-align: center;
+  }
+
+  header {
+    height: 40px;
+  }
+
+  h3, h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  h1, h2, h3, h4 {
+    font-size: 25px;
+  }
+
+  h1.title {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 20px;
+    margin-top: 40px;
+  }
+
+  h5 {
+    padding-right: 0;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .vertical-center {
+    position: relative;
+  }
+
+  .a2a_kit p {
+    width: 100%;
+  }
+  .a2a_kit a {
+    margin-left: 0;
+    width: 16%;
+  }
+
+  .navbar-expand-lg .nav-item:after {
+    content: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
