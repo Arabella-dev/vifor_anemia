@@ -116,6 +116,7 @@ h1.title{
     font-style: normal;
     font-weight: 700;
     line-height: 32px; /* 160% */
+    padding: 0 40px;
 }
 h5{
     padding-right: 80px;
@@ -212,9 +213,9 @@ footer{
     text-align: center;
     video {
         width: auto;
-        height: auto;
+        height: 416px;
         max-width: 100%;
-        max-height: 600px;
+        max-height: 416px;
     }
 }
 .a2a_kit {
@@ -225,7 +226,7 @@ footer{
         margin: 5px 0 0;
     }
     a{
-        margin-left: 24px;
+        margin-left: 10px;
         &.a2a_linkshare:after {
             content: url(../images/ico-share.png);
         }
@@ -256,20 +257,18 @@ footer{
     }
     header{
         height: 40px;
-    }
-    h3, h2{
-        font-size: 30px;
-        text-align: center;
+        margin-bottom: 25px;
     }
     h1, h2, h3, h4{
-        font-size: 25px;
+        font-size: 32px;
     }
     h1.title{
         font-size: 16px;
         font-style: normal;
         font-weight: 800;
         line-height: 20px; 
-        margin-top: 40px;
+        margin-top: 20px;
+        padding: 0;
     }
     h5{
         padding-right: 0;
@@ -277,6 +276,7 @@ footer{
         font-style: normal;
         font-weight: 500;
         line-height: 24px;
+        padding: 0 30px;
     }
     .subtitle{        
         font-size: 16px;
@@ -290,7 +290,7 @@ footer{
         }
         a{
             margin-left: 0;
-            width: 16%;            
+            width: 15vw;           
         }
     }
     .navbar-expand-lg{
@@ -300,7 +300,12 @@ footer{
                 content: none;
             }
         }
-}
+    }
+    footer{
+        header{
+            margin-bottom: 60px;
+        }
+    }
 }
 @media (min-width:1400px){
 }
